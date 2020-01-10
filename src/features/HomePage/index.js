@@ -19,7 +19,12 @@ function HomePage() {
     fetchData();
   }, [addError]);
 
-  return <div>Will render some data</div>;
+  return (
+    <div>
+      Will throw and error from a fake API call 2 seconds after the component
+      mounts
+    </div>
+  );
 }
 
 export default HomePage;
